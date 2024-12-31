@@ -1,0 +1,22 @@
+[
+    {
+        "text": "How are you?",
+        "label": "english"
+    },
+    {
+        "text": "How far?",
+        "label": "pidgin"
+    },
+    {
+        "text": "Bawo ni?",
+        "label": "yoruba"
+    },
+    {
+        "text": "Ina kwana?",
+        "label": "hausa"
+    },
+    {
+        "text": "Kedu ka ị dị?",
+        "label": "igbo"
+    }
+]

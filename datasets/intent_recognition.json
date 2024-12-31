@@ -1,0 +1,17 @@
+[
+    {
+        "text": "Hello, how are you?",
+        "intent": "greeting",
+        "language": "english"
+    },
+    {
+        "text": "How far?",
+        "intent": "greeting",
+        "language": "pidgin"
+    },
+    {
+        "text": "I need help.",
+        "intent": "help_request",
+        "language": "english"
+    }
+]

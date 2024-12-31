@@ -1,0 +1,14 @@
+[
+    {
+        "input": "How are you?",
+        "response": "I'm good, thank you! How about you?"
+    },
+    {
+        "input": "Bawo ni?",
+        "response": "Mo wa dada! Se alafia ni?"
+    },
+    {
+        "input": "How far?",
+        "response": "I dey o! How you dey?"
+    }
+]
