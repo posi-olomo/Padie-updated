@@ -18,5 +18,65 @@
     {
         "text": "Kedu ka ị dị?",
         "label": "igbo"
+    },
+    {
+        "text": "What's the time?",
+        "label": "english"
+    },
+    {
+        "text": "Wetin be the time?",
+        "label": "pidgin"
+    },
+    {
+        "text": "Kilo jẹ akoko?",
+        "label": "yoruba"
+    },
+    {
+        "text": "Yaushe lokaci zai yi?",
+        "label": "hausa"
+    },
+    {
+        "text": "Kedu mgbe?",
+        "label": "igbo"
+    },
+    {
+        "text": "Good morning.",
+        "label": "english"
+    },
+    {
+        "text": "I dey okay.",
+        "label": "pidgin"
+    },
+    {
+        "text": "Se daadaa ni?",
+        "label": "yoruba"
+    },
+    {
+        "text": "Ina lafiya?",
+        "label": "hausa"
+    },
+    {
+        "text": "A dị m mma.",
+        "label": "igbo"
+    },
+    {
+        "text": "Where is the nearest market?",
+        "label": "english"
+    },
+    {
+        "text": "Where I fit see market?",
+        "label": "pidgin"
+    },
+    {
+        "text": "Nibo ni mo ti le ri ọja sunmọ julọ?",
+        "label": "yoruba"
+    },
+    {
+        "text": "Ina kasuwa mafi kusa?",
+        "label": "hausa"
+    },
+    {
+        "text": "Ebee ka ahịa dị nso?",
+        "label": "igbo"
     }
 ]

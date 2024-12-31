@@ -10,8 +10,68 @@
         "language": "pidgin"
     },
     {
+        "text": "Bawo ni?",
+        "intent": "greeting",
+        "language": "yoruba"
+    },
+    {
+        "text": "Good morning.",
+        "intent": "greeting",
+        "language": "english"
+    },
+    {
+        "text": "Good morning, sir.",
+        "intent": "greeting",
+        "language": "english"
+    },
+    {
         "text": "I need help.",
         "intent": "help_request",
         "language": "english"
+    },
+    {
+        "text": "Abeg, fit you help me?",
+        "intent": "help_request",
+        "language": "pidgin"
+    },
+    {
+        "text": "Se o le ran mi lowo?",
+        "intent": "help_request",
+        "language": "yoruba"
+    },
+    {
+        "text": "Thank you very much.",
+        "intent": "farewell",
+        "language": "english"
+    },
+    {
+        "text": "See you later.",
+        "intent": "farewell",
+        "language": "english"
+    },
+    {
+        "text": "O da bo.",
+        "intent": "farewell",
+        "language": "yoruba"
+    },
+    {
+        "text": "I no like this.",
+        "intent": "complaint",
+        "language": "pidgin"
+    },
+    {
+        "text": "This is not working.",
+        "intent": "complaint",
+        "language": "english"
+    },
+    {
+        "text": "This price is too high!",
+        "intent": "complaint",
+        "language": "english"
+    },
+    {
+        "text": "Eleyi ti ga ju.",
+        "intent": "complaint",
+        "language": "yoruba"
     }
 ]
