@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 **GistAI** is an evolving, open-source Python package designed to enable conversational AI systems with support for Nigerian languages, including **Pidgin**, **Yoruba**, **Hausa**, and **Igbo**. It aims to provide AI-powered tools for **language detection**, **intent recognition**, and **response generation** while fostering community collaboration to enhance its capabilities.
