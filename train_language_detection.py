@@ -20,6 +20,7 @@ from sklearn.metrics import f1_score
 
 import warnings
 
+from gistai.core.constants import LANGUAGES
 from gistai.core.utils import load_and_inspect_dataset
 from misc.test_language import predict_language, predict_languages
 
@@ -48,7 +49,7 @@ MOODEL_NAME = (
 # 3. Define Label Mappings
 # -------------------------
 
-label_mapping = {"english": 0, "pidgin": 1, "yoruba": 2, "hausa": 3, "igbo": 4}
+label_mapping = {count: intent for count, intent in enumerate(LANGUAGES)}
 id2label = {v: k for k, v in label_mapping.items()}
 
 # -------------------------
