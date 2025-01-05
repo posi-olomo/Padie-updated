@@ -16,6 +16,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 import warnings
 
+from gistai.core.constants import INTENTS
 from gistai.core.utils import load_and_inspect_dataset
 
 # -------------------------
@@ -28,8 +29,6 @@ SEED = 42
 
 # Globals for intent recognition
 tokenizer = None
-id2label = None
-label_mapping = None
 accuracy_metric = evaluate.load("accuracy")  # Preload metrics for efficiency
 
 
@@ -55,12 +54,8 @@ def load_trained_model(model_path):
 # 3. Define Label Mappings
 # -------------------------
 
-
-def create_label_mapping(dataset):
-    global id2label, label_mapping
-    unique_intents = sorted(set(dataset["intent"]))
-    label_mapping = {intent: idx for idx, intent in enumerate(unique_intents)}
-    id2label = {v: k for k, v in label_mapping.items()}
+label_mapping = {count: intent for count, intent in enumerate(INTENTS)}
+id2label = {v: k for k, v in label_mapping.items()}
 
 
 # -------------------------
@@ -158,13 +153,10 @@ def calculate_class_weights(dataset):
 
 
 def main():
-    global tokenizer, label_mapping, id2label
-
     warnings.filterwarnings("ignore", category=FutureWarning)
 
     # Load and inspect dataset
     dataset = load_and_inspect_dataset("intent_recognition", "intent")
-    create_label_mapping(dataset)
 
     # Initialize tokenizer
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
