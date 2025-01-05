@@ -1,0 +1,107 @@
+[
+    {
+        "text": "How far?",
+        "intent": "greeting",
+        "language": "pidgin"
+    },
+    {
+        "text": "How far?",
+        "intent": "greeting",
+        "language": "pidgin"
+    },
+    {
+        "text": "Wetin dey happen?",
+        "intent": "greeting",
+        "language": "pidgin"
+    },
+    {
+        "text": "Abeg, fit you help me?",
+        "intent": "help_request",
+        "language": "pidgin"
+    },
+    {
+        "text": "Abeg, carry this load for me.",
+        "intent": "help_request",
+        "language": "pidgin"
+    },
+    {
+        "text": "I no like this.",
+        "intent": "complaint",
+        "language": "pidgin"
+    },
+    {
+        "text": "This thing no dey work at all.",
+        "intent": "complaint",
+        "language": "pidgin"
+    },
+    {
+        "text": "Abeg, I need a hand here.",
+        "intent": "help_request",
+        "language": "pidgin"
+    },
+    {
+        "text": "Wetin dey, my guy?",
+        "intent": "greeting",
+        "language": "pidgin"
+    },
+    {
+        "text": "This thing don spoil.",
+        "intent": "complaint",
+        "language": "pidgin"
+    },
+    {
+        "text": "Wetin I go do for here?",
+        "intent": "help_request",
+        "language": "pidgin"
+    },
+    {
+        "text": "I go see you tomorrow.",
+        "intent": "farewell",
+        "language": "pidgin"
+    },
+    {
+        "text": "You dey alright?",
+        "intent": "greeting",
+        "language": "pidgin"
+    },
+    {
+        "text": "Abeg, help me hold this.",
+        "intent": "help_request",
+        "language": "pidgin"
+    },
+    {
+        "text": "Biko, can you lend me some money?",
+        "intent": "help_request",
+        "language": "pidgin"
+    },
+    {
+        "text": "Later, bro.",
+        "intent": "farewell",
+        "language": "pidgin"
+    },
+    {
+        "text": "I go follow you later.",
+        "intent": "farewell",
+        "language": "pidgin"
+    },
+    {
+        "text": "I dey go now.",
+        "intent": "farewell",
+        "language": "pidgin"
+    },
+    {
+        "text": "Dis one no make sense at all.",
+        "intent": "complaint",
+        "language": "pidgin"
+    },
+    {
+        "text": "This thing don break.",
+        "intent": "complaint",
+        "language": "pidgin"
+    },
+    {
+        "text": "Wetin I go use this one do?",
+        "intent": "complaint",
+        "language": "pidgin"
+    }
+]

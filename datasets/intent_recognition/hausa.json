@@ -1,0 +1,192 @@
+[
+    {
+        "text": "Sannu, ya kake?",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Sannu! Ya jiki?",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Ina kwana?",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Ina yini?",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Sannu da zuwa.",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Barka da rana.",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Barka da safe.",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Barka da dare.",
+        "intent": "greeting",
+        "language": "hausa"
+    },
+    {
+        "text": "Don Allah, ina bukatar taimako.",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Zaka iya taimaka min?",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Ka taimaka min, don Allah.",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Ina neman hanyar gida.",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Don Allah, ina neman asibiti.",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Zan iya samun ruwa, don Allah?",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Ina bukatar kudi don na biya mota.",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Don Allah, za ka nuna min hanyar kasuwa?",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Ka taimaka min ɗaukar wannan kaya.",
+        "intent": "help_request",
+        "language": "hausa"
+    },
+    {
+        "text": "Na gode sosai.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Sai anjima.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Sai gobe.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "A kiyaye hanya!",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Allah ya kiyaye.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Allah ya bada sa’a.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Allah ya tsare hanya.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Kada ka manta da ni.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Zan dawo nan gaba.",
+        "intent": "farewell",
+        "language": "hausa"
+    },
+    {
+        "text": "Wannan abu ya yi tsada sosai!",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Bana jin dadin wannan abu.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Sabis dinku ya yi kasa sosai.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Me yasa wannan ba ya aiki?",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Wannan abu ya lalace.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Farashin nan ya yi yawa sosai.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Sabis ɗinku ba ya jin dadi.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Ina fushi da irin wannan sabis.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Bana son yadda aka yi min magana.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Za a iya gyara wannan abu?",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Wannan kayan ya yi rauni.",
+        "intent": "complaint",
+        "language": "hausa"
+    },
+    {
+        "text": "Ba zan sake siya daga nan ba.",
+        "intent": "complaint",
+        "language": "hausa"
+    }
+]

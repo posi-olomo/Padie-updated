@@ -1,0 +1,162 @@
+[
+    {
+        "text": "Kedu ka ị mere?",
+        "intent": "greeting",
+        "language": "igbo"
+    },
+    {
+        "text": "Ị dị mma?",
+        "intent": "greeting",
+        "language": "igbo"
+    },
+    {
+        "text": "Kedu ihe ọ bụla?",
+        "intent": "greeting",
+        "language": "igbo"
+    },
+    {
+        "text": "Ekele m gị.",
+        "intent": "greeting",
+        "language": "igbo"
+    },
+    {
+        "text": "Ụtụtụ ọma.",
+        "intent": "greeting",
+        "language": "igbo"
+    },
+    {
+        "text": "Ehihie ọma.",
+        "intent": "greeting",
+        "language": "igbo"
+    },
+    {
+        "text": "Ka ọ dị gị.",
+        "intent": "greeting",
+        "language": "igbo"
+    },
+    {
+        "text": "Biko, nyere m aka.",
+        "intent": "help_request",
+        "language": "igbo"
+    },
+    {
+        "text": "Enwere m nsogbu ebe a.",
+        "intent": "help_request",
+        "language": "igbo"
+    },
+    {
+        "text": "Ị ga-enyere m aka?",
+        "intent": "help_request",
+        "language": "igbo"
+    },
+    {
+        "text": "Biko, gosi m ụzọ.",
+        "intent": "help_request",
+        "language": "igbo"
+    },
+    {
+        "text": "Enwere m mkpa mmiri.",
+        "intent": "help_request",
+        "language": "igbo"
+    },
+    {
+        "text": "Biko, nyere m aka iji chọta ụzọ.",
+        "intent": "help_request",
+        "language": "igbo"
+    },
+    {
+        "text": "Biko, ị ga-enyere m aka ijide ihe a?",
+        "intent": "help_request",
+        "language": "igbo"
+    },
+    {
+        "text": "Daalụ nke ukwuu.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Ka ọ dị.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Ka eme ọzọ.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Chọpụta ụzọ nke ọma.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Ezigbo abalị.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Jisie ike.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Ezigbo ihe ị na-eme.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Ahụrụ m gị n’anya, ga nke ọma.",
+        "intent": "farewell",
+        "language": "igbo"
+    },
+    {
+        "text": "Nke a dị oke ọnụ!",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Anaghị m enweta uru nke a.",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Ihe a anaghị arụ ọrụ nke ọma.",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Ọnụ ahịa ahụ dị oke elu!",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Ekwesịrị imezi ọrụ gị.",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Ihe a agbajiela.",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Ọrụ a dị nwayọọ nwayọọ.",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Agaghị m azụta ihe n’ebe a ọzọ.",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Gịnị mere ebe a ji dị ọcha?",
+        "intent": "complaint",
+        "language": "igbo"
+    },
+    {
+        "text": "Ihe a anaghị arụ ọrụ dịka atụ anya.",
+        "intent": "complaint",
+        "language": "igbo"
+    }
+]

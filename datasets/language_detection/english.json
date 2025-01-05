@@ -1,0 +1,238 @@
+[
+    {
+        "text": "Can you recommend a good restaurant nearby?",
+        "label": "english"
+    },
+    {
+        "text": "Can you recommend a good restaurant nearby?",
+        "label": "english"
+    },
+    {
+        "text": "What's the weather forecast for tomorrow?",
+        "label": "english"
+    },
+    {
+        "text": "I need help with my homework.",
+        "label": "english"
+    },
+    {
+        "text": "Where is the nearest subway station?",
+        "label": "english"
+    },
+    {
+        "text": "I'm planning to visit New York next month.",
+        "label": "english"
+    },
+    {
+        "text": "Do you have any book recommendations?",
+        "label": "english"
+    },
+    {
+        "text": "How do I reset my password?",
+        "label": "english"
+    },
+    {
+        "text": "What's your favorite movie?",
+        "label": "english"
+    },
+    {
+        "text": "I would like to schedule a meeting for Friday.",
+        "label": "english"
+    },
+    {
+        "text": "Can you translate this document for me?",
+        "label": "english"
+    },
+    {
+        "text": "Could you help me find my keys?",
+        "label": "english"
+    },
+    {
+        "text": "I just moved here a few months ago.",
+        "label": "english"
+    },
+    {
+        "text": "Where can I get a taxi?",
+        "label": "english"
+    },
+    {
+        "text": "That song has been stuck in my head all day.",
+        "label": "english"
+    },
+    {
+        "text": "I'm looking for a new apartment in the city.",
+        "label": "english"
+    },
+    {
+        "text": "This food tastes amazing!",
+        "label": "english"
+    },
+    {
+        "text": "Do you know where I can charge my phone?",
+        "label": "english"
+    },
+    {
+        "text": "Please show me the nearest hospital.",
+        "label": "english"
+    },
+    {
+        "text": "Let's meet at the cafe around noon.",
+        "label": "english"
+    },
+    {
+        "text": "I will travel to Abuja next week.",
+        "label": "english"
+    },
+    {
+        "text": "Can you help me find a bookstore?",
+        "label": "english"
+    },
+    {
+        "text": "What's the best way to get to the airport?",
+        "label": "english"
+    },
+    {
+        "text": "I need to buy a new laptop for work.",
+        "label": "english"
+    },
+    {
+        "text": "Could you recommend a good movie to watch?",
+        "label": "english"
+    },
+    {
+        "text": "I'm having trouble connecting to the internet.",
+        "label": "english"
+    },
+    {
+        "text": "Where is the closest ATM?",
+        "label": "english"
+    },
+    {
+        "text": "I forgot my password. Can you help me reset it?",
+        "label": "english"
+    },
+    {
+        "text": "What's the best route to avoid traffic?",
+        "label": "english"
+    },
+    {
+        "text": "Do you have any vegetarian options?",
+        "label": "english"
+    },
+    {
+        "text": "I'm interested in taking a cooking class.",
+        "label": "english"
+    },
+    {
+        "text": "Can you suggest a good gym nearby?",
+        "label": "english"
+    },
+    {
+        "text": "I need to schedule a doctor's appointment.",
+        "label": "english"
+    },
+    {
+        "text": "What's the latest news today?",
+        "label": "english"
+    },
+    {
+        "text": "Could you help me carry these bags?",
+        "label": "english"
+    },
+    {
+        "text": "I'm looking for a reliable mechanic.",
+        "label": "english"
+    },
+    {
+        "text": "What's the procedure to apply for a visa?",
+        "label": "english"
+    },
+    {
+        "text": "I would like to rent a car for the weekend.",
+        "label": "english"
+    },
+    {
+        "text": "Can you recommend a good book for learning Python?",
+        "label": "english"
+    },
+    {
+        "text": "I'm having issues with my phone's battery life.",
+        "label": "english"
+    },
+    {
+        "text": "Where is the best place to watch the sunset?",
+        "label": "english"
+    },
+    {
+        "text": "Do you offer any discounts for students?",
+        "label": "english"
+    },
+    {
+        "text": "I need assistance with my online order.",
+        "label": "english"
+    },
+    {
+        "text": "What's the policy on returns and exchanges?",
+        "label": "english"
+    },
+    {
+        "text": "Can you help me find a good dentist?",
+        "label": "english"
+    },
+    {
+        "text": "I'm interested in learning more about your services.",
+        "label": "english"
+    },
+    {
+        "text": "Where can I find the public library?",
+        "label": "english"
+    },
+    {
+        "text": "Do you have any openings for internships?",
+        "label": "english"
+    },
+    {
+        "text": "What's the best way to contact customer support?",
+        "label": "english"
+    },
+    {
+        "text": "Please show me the nearest hospital.",
+        "label": "english"
+    },
+    {
+        "text": "Do you know where I can charge my phone?",
+        "label": "english"
+    },
+    {
+        "text": "I'm looking for a new apartment in the city.",
+        "label": "english"
+    },
+    {
+        "text": "This food tastes amazing!",
+        "label": "english"
+    },
+    {
+        "text": "Could you help me find my keys?",
+        "label": "english"
+    },
+    {
+        "text": "I will travel to Abuja next week.",
+        "label": "english"
+    },
+    {
+        "text": "Let's meet at the cafe around noon.",
+        "label": "english"
+    },
+    {
+        "text": "I just moved here a few months ago.",
+        "label": "english"
+    },
+    {
+        "text": "Where can I get a taxi?",
+        "label": "english"
+    },
+    {
+        "text": "That song has been stuck in my head all day.",
+        "label": "english"
+    }
+]
