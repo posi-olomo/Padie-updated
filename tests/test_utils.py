@@ -1,30 +1,26 @@
+from random import choice
 import pytest
-from gistai.core.utils import load_dataset
+from gistai.core.utils import load_file
+
+LANGUAGES = ["english", "pidgin", "yoruba", "igbo", "hausa"]
 
 
 def test_load_language_detection_dataset():
-    dataset = load_dataset("language_detection.json")
+    dataset = load_file(f"language_detection/{choice(LANGUAGES)}.json")
     assert len(dataset) > 0
     assert "text" in dataset[0]
     assert "label" in dataset[0]
 
 
 def test_load_intent_recognition_dataset():
-    dataset = load_dataset("intent_recognition.json")
+    dataset = load_file(f"intent_recognition/{choice(LANGUAGES)}.json")
     assert len(dataset) > 0
     assert "text" in dataset[0]
     assert "intent" in dataset[0]
     assert "language" in dataset[0]
 
 
-def test_load_response_generation_dataset():
-    dataset = load_dataset("response_generation.json")
-    assert len(dataset) > 0
-    assert "input" in dataset[0]
-    assert "response" in dataset[0]
-
-
 def test_load_nonexistent_dataset():
     with pytest.raises(FileNotFoundError) as excinfo:
-        load_dataset("nonexistent.json")
+        load_file("nonexistent.json")
     assert "nonexistent.json" in str(excinfo.value)

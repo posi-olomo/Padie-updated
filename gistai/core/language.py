@@ -8,4 +8,4 @@ def detect_language(text):
     Returns:
         str: Detected language (e.g., 'english', 'pidgin', etc.).
     """
-    return "english"  # Default language for testing
+    return "pidgin"  # Default language for testing

@@ -2,6 +2,6 @@ from gistai.core.intent import detect_intent
 
 
 def test_detect_intent():
-    text = "I need help"
+    text = "Wetin dey happen?"
     intent = detect_intent(text)
-    assert intent == "greeting"  # Adjust based on actual function implementation
+    assert intent == "greeting"
