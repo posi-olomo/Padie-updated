@@ -119,11 +119,4 @@ We’ve added the following labels to help you get started:
 -   `help wanted`: Areas where contributions are needed.
 -   `dataset needed`: Specific requests for new datasets.
 
-Check out our [Issues](#) section for more details.
-
----
-
-## 👩‍💻 **Contact and Updates**
-
--   🌐 Visit the [GistAI Repository](#) _(link coming soon!)_
--   💌 Have questions? Join discussions or open an issue on GitHub.
+Check out our [Issues](https://github.com/sir-temi/gistai/issues) section for more details.
