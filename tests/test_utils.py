@@ -1,7 +1,7 @@
 from random import choice
 import pytest
-from gistai.core.constants import LANGUAGES
-from gistai.core.utils import load_file
+from mypadi.core.constants import LANGUAGES
+from mypadi.core.utils import load_file
 
 
 def test_load_language_detection_dataset():

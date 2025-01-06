@@ -1,13 +1,13 @@
-# 🌟 **GistAI** 🌟
+# 🌟 **MyPadi** 🌟
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow.svg)
 ![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
-**GistAI** is an evolving, open-source Python package designed to enable conversational AI systems with support for Nigerian languages, including **Pidgin**, **Yoruba**, **Hausa**, and **Igbo**. It aims to provide AI-powered tools for **language detection**, **intent recognition**, and **response generation** while fostering community collaboration to enhance its capabilities.
+**MyPadi** is an evolving, open-source Python package designed to enable conversational AI systems with support for Nigerian languages, including **Pidgin**, **Yoruba**, **Hausa**, and **Igbo**. It aims to provide AI-powered tools for **language detection**, **intent recognition**, and **response generation** while fostering community collaboration to enhance its capabilities.
 
-> **🔧 Note:** GistAI is a work in progress. Models are being trained and refined, and we’re actively gathering datasets to improve accuracy. Your contributions can make a difference!
+> **🔧 Note:** MyPadi is a work in progress. Models are being trained and refined, and we’re actively gathering datasets to improve accuracy. Your contributions can make a difference!
 
 ---
 
@@ -23,7 +23,7 @@
     Generate intelligent, context-aware responses tailored to user input.
 
 -   ⚙️ **Framework-Agnostic Design**  
-    Seamlessly integrate GistAI into any framework or application.
+    Seamlessly integrate MyPadi into any framework or application.
 
 -   🧑‍🤝‍🧑 **Community Contributions**  
     An open platform for developers, linguists, and AI enthusiasts to contribute datasets, models, and features.
@@ -49,7 +49,7 @@ We welcome contributions from everyone—whether you're a developer, linguist, o
 2. **Clone Your Fork**:
 
     ```bash
-    git clone https://github.com/sir-temi/gistai.git
+    git clone https://github.com/sir-temi/MyPadi.git
     ```
 
 3. **Create a Branch**:
@@ -95,7 +95,7 @@ We welcome contributions from everyone—whether you're a developer, linguist, o
 
 ### 🎉 **Phase 4: Stable Release**
 
--   Deliver a production-ready version of GistAI.
+-   Deliver a production-ready version of MyPadi.
 -   Provide detailed documentation and tutorials for users and contributors.
 
 ---
@@ -109,7 +109,7 @@ We’re finalizing the core framework and will provide installation instructions
 
 ## 🌍 **Open Source Contribution**
 
-**GistAI** is licensed under the [MIT License](https://opensource.org/licenses/MIT), ensuring it remains free and open for everyone to use, contribute to, and enhance.
+**MyPadi** is licensed under the [MIT License](https://opensource.org/licenses/MIT), ensuring it remains free and open for everyone to use, contribute to, and enhance.
 
 ### 🏷️ **Labels to Watch**
 
@@ -119,4 +119,4 @@ We’ve added the following labels to help you get started:
 -   `help wanted`: Areas where contributions are needed.
 -   `dataset needed`: Specific requests for new datasets.
 
-Check out our [Issues](https://github.com/sir-temi/gistai/issues) section for more details.
+Check out our [Issues](https://github.com/sir-temi/MyPadi/issues) section for more details.

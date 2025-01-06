@@ -1,4 +1,4 @@
-from gistai.core.language import detect_language
+from mypadi.core.language import detect_language
 
 
 def test_detect_language():

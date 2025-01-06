@@ -14,7 +14,7 @@ evaluate==0.4.3
 filelock==3.16.1
 frozenlist==1.5.0
 fsspec==2024.9.0
--e git+ssh://git@github.com/sir-temi/gistai.git@d7afb31cd4511a73e8faeee7c7925164392b3c86#egg=gistai
+-e git+ssh://git@github.com/sir-temi/MyPadi.git@d7afb31cd4511a73e8faeee7c7925164392b3c86#egg=MyPadi
 huggingface-hub==0.27.0
 idna==3.10
 iniconfig==2.0.0

@@ -4,7 +4,7 @@ from collections import Counter
 import torch
 from torch.nn import CrossEntropyLoss
 
-from datasets import load_dataset, Dataset
+from datasets import Dataset
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
@@ -20,8 +20,8 @@ from sklearn.metrics import f1_score
 
 import warnings
 
-from gistai.core.constants import LANGUAGES
-from gistai.core.utils import load_and_inspect_dataset
+from mypadi.core.constants import LANGUAGES
+from mypadi.core.utils import load_and_inspect_dataset
 from misc.test_language import predict_language, predict_languages
 
 # -------------------------
