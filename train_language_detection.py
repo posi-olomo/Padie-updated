@@ -20,8 +20,8 @@ from sklearn.metrics import f1_score
 
 import warnings
 
-from gistai.core.constants import LANGUAGES
-from gistai.core.utils import load_and_inspect_dataset
+from mypadi.core.constants import LANGUAGES
+from mypadi.core.utils import load_and_inspect_dataset
 from misc.test_language import predict_language, predict_languages
 
 # -------------------------

@@ -16,8 +16,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 import warnings
 
-from gistai.core.constants import INTENTS
-from gistai.core.utils import load_and_inspect_dataset
+from mypadi.core.constants import INTENTS
+from mypadi.core.utils import load_and_inspect_dataset
 
 # -------------------------
 # 1. Define Constants and Paths

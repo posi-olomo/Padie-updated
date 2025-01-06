@@ -1,4 +1,4 @@
-from gistai.core.intent import detect_intent
+from mypadi.core.intent import detect_intent
 
 
 def test_detect_intent():
