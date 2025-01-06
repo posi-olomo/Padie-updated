@@ -4,7 +4,7 @@ from collections import Counter
 import torch
 from torch.nn import CrossEntropyLoss
 
-from datasets import load_dataset, Dataset
+from datasets import Dataset
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
