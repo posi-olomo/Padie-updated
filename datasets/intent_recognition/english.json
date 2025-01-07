@@ -1,192 +1,192 @@
 [
     {
         "text": "Hello, how are you?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Hello, how are you?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Hi there!",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Good morning.",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Good morning, sir.",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Good afternoon, ma'am.",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "I need help.",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Can someone assist me, please?",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Thank you very much.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "I appreciate it.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "See you later.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "Take care.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "This is not working.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "This price is too high!",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "I don't like the service.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "Can you help me with this problem?",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Hi! How are you doing today?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Your service is too slow!",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "I really need help now!",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Please, can you assist me?",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Bye, take care!",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "What's up?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Howdy!",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Good evening.",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Long time no see!",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Hey, what’s new?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "english"
     },
     {
         "text": "Help me with this bag.",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "I could use some assistance.",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Can you show me the way?",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Do you have some time to assist me?",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "english"
     },
     {
         "text": "Thank you kindly.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "Alright, see you next time.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "Take care of yourself!",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "english"
     },
     {
         "text": "This item is too expensive!",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "Your network is so slow!",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "Why is this place so dirty?",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "This customer service is terrible.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     },
     {
         "text": "I have a serious problem with this.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "english"
     }
 ]

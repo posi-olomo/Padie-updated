@@ -1,112 +1,112 @@
 [
     {
         "text": "Bawo ni?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "yoruba"
     },
     {
         "text": "Bawo ni?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "yoruba"
     },
     {
         "text": "Ṣe o n'kan n'ire?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "yoruba"
     },
     {
         "text": "Se o le ran mi lowo?",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "yoruba"
     },
     {
         "text": "Ẹ jọwọ, ran mi lọwọ.",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "yoruba"
     },
     {
         "text": "O da bo.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "yoruba"
     },
     {
         "text": "Ẹ ku irin ajo.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "yoruba"
     },
     {
         "text": "Eleyi ti ga ju.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "yoruba"
     },
     {
         "text": "Iṣẹ yii ko ni ilọsiwaju.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "yoruba"
     },
     {
         "text": "Ẹ jọwọ, ṣe ẹ le ṣe iranlọwọ fun mi?",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "yoruba"
     },
     {
         "text": "Bawoni, ọrẹ mi?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "yoruba"
     },
     {
         "text": "Ọya, mi o fẹran eleyi rara.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "yoruba"
     },
     {
         "text": "Ẹ ma binu, ran mi lọwọ si eleyi.",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "yoruba"
     },
     {
         "text": "Ẹ ku irin ajo, ọrẹ mi.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "yoruba"
     },
     {
         "text": "Bawo ni gbogbo eleyi?",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "yoruba"
     },
     {
         "text": "O ti n pẹ o!",
-        "intent": "greeting",
+        "label": "greeting",
         "language": "yoruba"
     },
     {
         "text": "Ẹ ma ṣe iranlọwọ fun mi.",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "yoruba"
     },
     {
         "text": "Mo nilo iranlọwọ pẹlu iṣẹ yii.",
-        "intent": "help_request",
+        "label": "help_request",
         "language": "yoruba"
     },
     {
         "text": "Ẹ ku irin ajo.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "yoruba"
     },
     {
         "text": "Ọdọọdun ni a maa pade.",
-        "intent": "farewell",
+        "label": "farewell",
         "language": "yoruba"
     },
     {
         "text": "Ẹ jọwọ, iṣẹ yin o dara.",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "yoruba"
     },
     {
         "text": "Ẹ ṣe atunṣe iṣẹ yin!",
-        "intent": "complaint",
+        "label": "complaint",
         "language": "yoruba"
     }
 ]

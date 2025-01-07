@@ -78,7 +78,7 @@ class IntentProcessor:
                 max_length=self.max_length,
             )
             tokenized["label"] = [
-                self.label_mapping[label] for label in examples["intent"]
+                self.label_mapping[label] for label in examples["label"]
             ]
             return tokenized
         except KeyError as e:
@@ -140,9 +140,10 @@ def calculate_class_weights(dataset):
     label_counts = Counter(dataset["label"])
     total_samples = len(dataset)
     num_classes = len(label_mapping)
+
     class_weights = [
         total_samples / (num_classes * label_counts[label_id])
-        for label_id in sorted(label_mapping.values())
+        for label_id in sorted(id2label.values())
     ]
     return torch.tensor(class_weights, dtype=torch.float)
 
@@ -156,7 +157,7 @@ def main():
     warnings.filterwarnings("ignore", category=FutureWarning)
 
     # Load and inspect dataset
-    dataset = load_and_inspect_dataset("intent_recognition", "intent")
+    dataset = load_and_inspect_dataset("intent_recognition", "label")
 
     # Initialize tokenizer
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
@@ -164,7 +165,7 @@ def main():
 
     # Tokenize dataset and convert to DataFrame
     tokenized_dataset = dataset.map(
-        processor, batched=True, remove_columns=["text", "intent"]
+        processor, batched=True, remove_columns=["text", "label"]
     )
     df = tokenized_dataset.to_pandas()
 
