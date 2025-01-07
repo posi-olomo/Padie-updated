@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from datasets import load_dataset, concatenate_datasets
 
-from gistai.core.constants import LANGUAGES
+from padie.core.constants import LANGUAGES
 
 
 def load_file(file_name):

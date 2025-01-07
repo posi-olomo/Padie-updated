@@ -20,8 +20,8 @@ from sklearn.metrics import f1_score
 
 import warnings
 
-from mypadi.core.constants import LANGUAGES
-from mypadi.core.utils import load_and_inspect_dataset
+from padie.core.constants import LANGUAGES
+from padie.core.utils import load_and_inspect_dataset
 from misc.test_language import predict_language, predict_languages
 
 # -------------------------
@@ -40,7 +40,7 @@ K_FOLDS = 5
 # Random seed for reproducibility
 SEED = 42
 
-MOODEL_NAME = (
+MODEL_NAME = (
     "bert-base-multilingual-cased"  # You can switch to a different model if needed
 )
 
@@ -71,6 +71,7 @@ class LanguageDetectionProcessor:
             padding=False,  # Padding handled by DataCollator
             max_length=self.max_length,
         )
+
         tokenized["label"] = [self.label_mapping[label] for label in examples["label"]]
         return tokenized
 
@@ -478,11 +479,11 @@ def main():
     dataset = load_and_inspect_dataset("language_detection", "label")
 
     # 2. Initialize tokenizer
-    tokenizer = AutoTokenizer.from_pretrained(MOODEL_NAME)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
     # 3. Initialize processing class
     processor = LanguageDetectionProcessor(
-        tokenizer=tokenizer, label_mapping=label_mapping, max_length=16
+        tokenizer=tokenizer, label_mapping=id2label, max_length=16
     )
 
     # 4. Tokenize the dataset using the processing class
@@ -495,7 +496,7 @@ def main():
 
     # 5. Initialize model
     model = AutoModelForSequenceClassification.from_pretrained(
-        MOODEL_NAME,
+        MODEL_NAME,
         num_labels=len(label_mapping),
         id2label=id2label,
         label2id=label_mapping,
@@ -559,7 +560,7 @@ def main():
     train_label_counts = Counter(train_dataset["label"])
     print("\nTraining Label Distribution After Stratification:")
     for label, count in train_label_counts.items():
-        print(f"  {id2label[label]}: {count}")
+        print(f"  {label_mapping[label]}: {count}")
 
     zero_count_labels = [
         label for label, count in train_label_counts.items() if count == 0
@@ -613,7 +614,7 @@ def main():
         perform_k_fold_cross_validation(
             tokenized_dataset=tokenized_dataset,
             tokenizer=tokenizer,
-            model_name=MOODEL_NAME,
+            model_name=MODEL_NAME,
             label_mapping=label_mapping,
             id2label=id2label,
             k_folds=K_FOLDS,

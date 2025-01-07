@@ -1,4 +1,4 @@
-from mypadi.core.intent import detect_intent
+from padie.core.intent import detect_intent
 
 
 def test_detect_intent():

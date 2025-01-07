@@ -2,7 +2,7 @@ import numpy as np
 from collections import Counter
 import torch
 from torch.nn import CrossEntropyLoss
-from datasets import load_dataset, Dataset, concatenate_datasets
+from datasets import Dataset
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
@@ -16,8 +16,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 import warnings
 
-from mypadi.core.constants import INTENTS
-from mypadi.core.utils import load_and_inspect_dataset
+from padie.core.constants import INTENTS
+from padie.core.utils import load_and_inspect_dataset
 
 # -------------------------
 # 1. Define Constants and Paths
@@ -160,7 +160,7 @@ def main():
 
     # Initialize tokenizer
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    processor = IntentProcessor(tokenizer, label_mapping)
+    processor = IntentProcessor(tokenizer, id2label)
 
     # Tokenize dataset and convert to DataFrame
     tokenized_dataset = dataset.map(

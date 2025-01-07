@@ -1,4 +1,4 @@
-from mypadi.core.language import detect_language
+from padie.core.language import detect_language
 
 
 def test_detect_language():
