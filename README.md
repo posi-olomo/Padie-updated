@@ -1,8 +1,8 @@
 # 🌟 **Padie** 🌟
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)  
-![Status](https://img.shields.io/badge/status-in%20progress-yellow.svg)  
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)  
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-in%20progress-yellow.svg)
+![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 **Padie** is an evolving, open-source Python package designed to enable conversational AI systems with support for Nigerian languages, including **Pidgin**, **Yoruba**, **Hausa**, and **Igbo**. It aims to provide AI-powered tools for **language detection**, **intent recognition**, and **response generation**, while fostering community collaboration to enhance its capabilities.
@@ -62,7 +62,7 @@ Datasets should follow a structured format. Each entry must include at least the
         "title": "Naija Language Translation",
         "author": "Wazobia",
         "year": 2021,
-        "url": "https://example.com/hausa-paper"
+        "url": "https://example.com/naija-paper"
     }
 }
 ```
