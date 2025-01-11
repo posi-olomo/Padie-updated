@@ -3,5 +3,16 @@
         "title": "Igbo-English Machine Translation: An Evaluation Benchmark",
         "author": "Ignatius Ezeani et al.",
         "year": 2020
+    },
+    "c2": {
+        "title": "Yoruba-text",
+        "author": [
+            "Iroro Orife",
+            "Timilehin Fasubaa",
+            "Olamilekan Wahab"
+        ],
+        "year": 2018,
+        "month": "January",
+        "url": "https://github.com/Niger-Volta-LTI/yoruba-text"
     }
 }
