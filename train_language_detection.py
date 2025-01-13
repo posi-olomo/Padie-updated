@@ -140,7 +140,7 @@ def create_trainer(
 # -----------------------------------------------------------------------------
 def main():
     warnings.filterwarnings("ignore", category=FutureWarning)
-    device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    device = torch.device("cuda" if torch.backends.mps.is_available() else "cpu")
     print(f"Using device: {device}")
 
     # 1. Load datasets
@@ -203,6 +203,27 @@ def main():
     # 9. Save Model & Tokenizer
     trainer.save_model(MODEL_OUTPUT_DIR)
     tokenizer.save_pretrained(MODEL_OUTPUT_DIR)
+
+
+def load_trained_model(model_path=MODEL_OUTPUT_DIR):
+    """
+    Loads the trained model and tokenizer from the specified path.
+
+    Args:
+        model_path (str): Path to the saved model and tokenizer.
+
+    Returns:
+        Pipeline: Hugging Face pipeline for text classification.
+    """
+    from transformers import pipeline
+
+    classifier = pipeline(
+        "text-classification",
+        model=model_path,
+        tokenizer=model_path,
+        device=0 if torch.backends.mps.is_available() else -1,  # Use MPS if available
+    )
+    return classifier
 
 
 if __name__ == "__main__":
