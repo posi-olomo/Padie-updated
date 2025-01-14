@@ -13,15 +13,16 @@ from transformers import (
 from sklearn.metrics import f1_score
 import warnings
 
+from padie.core.constants import LANGUAGES
 from padie.core.utils import load_and_inspect_dataset
 
 # -----------------------------------------------------------------------------
 # Constants & Configurations
 # -----------------------------------------------------------------------------
-MODEL_OUTPUT_DIR = "./models/language_detection"
+MODEL_OUTPUT_DIR = "./models/full/language_detection"
+MODEL_NAME = "Davlan/afro-xlmr-base"
 SEED = 42
-MODEL_NAME = "bert-base-multilingual-cased"
-LANGUAGES = ["english", "pidgin", "yoruba", "igbo", "hausa"]
+
 
 # Label Mappings
 label_mapping = {i: lang for i, lang in enumerate(LANGUAGES)}
@@ -136,11 +137,39 @@ def create_trainer(
 
 
 # -----------------------------------------------------------------------------
+# Load model function
+# -----------------------------------------------------------------------------
+def load_trained_model(model_path=MODEL_OUTPUT_DIR):
+    """
+    Loads the trained model and tokenizer from the specified path.
+
+    Args:
+        model_path (str): Path to the saved model and tokenizer.
+
+    Returns:
+        Pipeline: Hugging Face pipeline for text classification.
+    """
+    from transformers import pipeline
+
+    classifier = pipeline(
+        "text-classification",
+        model=model_path,
+        tokenizer=model_path,
+        device=0 if torch.backends.mps.is_available() else -1,  # Use MPS if available
+    )
+    return classifier
+
+
+# -----------------------------------------------------------------------------
 # Main Training Script
 # -----------------------------------------------------------------------------
 def main():
     warnings.filterwarnings("ignore", category=FutureWarning)
-    device = torch.device("cuda" if torch.backends.mps.is_available() else "cpu")
+    device = torch.device(
+        "cuda"
+        if torch.cuda.is_available()
+        else "mps" if torch.backends.mps.is_available() else "cpu"
+    )
     print(f"Using device: {device}")
 
     # 1. Load datasets
@@ -189,6 +218,7 @@ def main():
     # 7. Data Collator
     data_collator = DataCollatorWithPadding(tokenizer)
 
+    print("==== Starting training ====")
     # 8. Trainer Initialization & Training
     trainer = create_trainer(
         model=model,
@@ -200,30 +230,14 @@ def main():
     )
     trainer.train()
 
+    print("==== Train complete ====")
+
+    print("==== Saving model ====")
     # 9. Save Model & Tokenizer
     trainer.save_model(MODEL_OUTPUT_DIR)
     tokenizer.save_pretrained(MODEL_OUTPUT_DIR)
 
-
-def load_trained_model(model_path=MODEL_OUTPUT_DIR):
-    """
-    Loads the trained model and tokenizer from the specified path.
-
-    Args:
-        model_path (str): Path to the saved model and tokenizer.
-
-    Returns:
-        Pipeline: Hugging Face pipeline for text classification.
-    """
-    from transformers import pipeline
-
-    classifier = pipeline(
-        "text-classification",
-        model=model_path,
-        tokenizer=model_path,
-        device=0 if torch.backends.mps.is_available() else -1,  # Use MPS if available
-    )
-    return classifier
+    print("==== Complete ====")
 
 
 if __name__ == "__main__":
