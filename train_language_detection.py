@@ -13,16 +13,16 @@ from transformers import (
 from sklearn.metrics import f1_score
 import warnings
 
+from padie.core.constants import LANGUAGES
 from padie.core.utils import load_and_inspect_dataset
 
 # -----------------------------------------------------------------------------
 # Constants & Configurations
 # -----------------------------------------------------------------------------
 MODEL_OUTPUT_DIR = "./models/full/language_detection"
+MODEL_NAME = "Davlan/afro-xlmr-base"
 SEED = 42
-MODEL_NAME = "bert-base-multilingual-cased"
-MODEL_NAME_DISTILLED = "distilbert-base-multilingual-cased"
-LANGUAGES = ["english", "pidgin", "yoruba", "igbo", "hausa"]
+
 
 # Label Mappings
 label_mapping = {i: lang for i, lang in enumerate(LANGUAGES)}
@@ -178,9 +178,9 @@ def main():
     )
 
     # 2. Tokenizer & Model
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME_DISTILLED)
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = AutoModelForSequenceClassification.from_pretrained(
-        MODEL_NAME_DISTILLED,
+        MODEL_NAME,
         num_labels=len(label_mapping),
         id2label=label_mapping,
         label2id=id2label,
