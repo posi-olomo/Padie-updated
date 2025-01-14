@@ -1,11 +1,12 @@
-import torch
+from pathlib import Path
 from transformers import pipeline
 from collections import defaultdict
 
-from train_language_detection import MODEL_OUTPUT_DIR
+
+MODEL_DIR = Path(__file__).resolve().parent.parent / "models" / "language_detection"
 
 
-def load_trained_model(model_path=MODEL_OUTPUT_DIR):
+def load_trained_model(model_path=MODEL_DIR):
     """
     Loads the trained model and tokenizer from the specified path.
 
