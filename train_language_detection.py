@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+from datasets import load_dataset 
 from collections import Counter
 import torch
 from torch.nn import CrossEntropyLoss
@@ -14,7 +16,7 @@ from sklearn.metrics import f1_score
 import warnings
 
 from padie.core.constants import LANGUAGES
-from padie.core.utils import load_and_inspect_dataset
+# from padie.core.utils import load_and_inspect_dataset
 
 # -----------------------------------------------------------------------------
 # Constants & Configurations
@@ -25,8 +27,8 @@ SEED = 42
 
 
 # Label Mappings
-label_mapping = {i: lang for i, lang in enumerate(LANGUAGES)}
-id2label = {v: k for k, v in label_mapping.items()}
+id2label = {i: lang for i, lang in enumerate(LANGUAGES)}
+label2id = {lang: i for i, lang in enumerate(LANGUAGES)}
 
 
 # -----------------------------------------------------------------------------
@@ -173,21 +175,27 @@ def main():
     print(f"Using device: {device}")
 
     # 1. Load datasets
-    train_dataset, eval_dataset = load_and_inspect_dataset(
-        "language_detection", "label", merge_notonal=True
-    )
+    datasets = load_dataset(
+    "json",
+    data_files={
+        "train": "datasets/language_detection/train_dataset.jsonl",
+        "eval": "datasets/language_detection/eval_dataset.jsonl",
+    }
+)
+    train_dataset = datasets["train"]
+    eval_dataset = datasets["eval"]
 
     # 2. Tokenizer & Model
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = AutoModelForSequenceClassification.from_pretrained(
         MODEL_NAME,
-        num_labels=len(label_mapping),
-        id2label=label_mapping,
-        label2id=id2label,
+        num_labels=len(id2label ),
+        id2label=id2label,
+        label2id=label2id,
     )
 
     # 3. Processing / Tokenization
-    processor = LanguageDetectionProcessor(tokenizer, id2label, max_length=64)
+    processor = LanguageDetectionProcessor(tokenizer, label2id, max_length=64)
     train_dataset = train_dataset.map(
         processor, batched=True, remove_columns=["text", "label"]
     )
