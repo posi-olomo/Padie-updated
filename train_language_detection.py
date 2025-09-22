@@ -194,16 +194,6 @@ def main():
         label2id=label2id,
     )
 
-    # Freeze all transformer (base model) layers
-    for param in model.base_model.parameters():
-        param.requires_grad = False
-
-    # Only classifier head is trainable now
-    for param in model.classifier.parameters():
-        param.requires_grad = True
-
-    print("Frozen base model parameters, training only classifier head.")
-
     # 3. Processing / Tokenization
     processor = LanguageDetectionProcessor(tokenizer, label2id, max_length=64)
     train_dataset = train_dataset.map(
