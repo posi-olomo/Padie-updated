@@ -222,15 +222,18 @@ def main():
         eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=3e-5,
-        per_device_train_batch_size=16,
-        per_device_eval_batch_size=16,
+        per_device_train_batch_size=32,
+        per_device_eval_batch_size=32,
         num_train_epochs=5,
         weight_decay=0.01,
         logging_dir="./logs",
         load_best_model_at_end=True,
         seed=SEED,
         logging_strategy="steps",  # log at regular intervals
-        logging_steps=10,
+        logging_steps=50,   # less frequence logging, keeps training smooth
+        fp16=True,          # enable mixed precision (speeds up on T4)
+        gradient_accumulation_steps=1,  # can increase if VRAM is tight
+        dataloader_num_workers=2,       # use CPU threads to feed the GPU faster
     )
 
     # 7. Data Collator
