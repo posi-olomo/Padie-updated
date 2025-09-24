@@ -194,6 +194,7 @@ def main():
         label2id=label2id,
     )
 
+<<<<<<< HEAD:train_language_detection_updated.py
     # Freeze all transformer (base model) layers
     for param in model.base_model.parameters():
         param.requires_grad = False
@@ -204,6 +205,8 @@ def main():
 
     print("Frozen base model parameters, training only classifier head.")
 
+=======
+>>>>>>> 1a471b8cfd5f67d0f91e11b6bbaf4a9e24ff175a:train_language_detection_old.py
     # 3. Processing / Tokenization
     processor = LanguageDetectionProcessor(tokenizer, label2id, max_length=64)
     train_dataset = train_dataset.map(
@@ -219,7 +222,7 @@ def main():
     # 6. Training Arguments
     training_args = TrainingArguments(
         output_dir=MODEL_OUTPUT_DIR,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=3e-5,
         per_device_train_batch_size=16,
