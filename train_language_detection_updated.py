@@ -198,7 +198,7 @@ def main():
     for param in model.base_model.parameters():
         param.requires_grad = False
 
-    # Only classifier head is trainable now
+    # Only classifier head isgit trainable now
     for param in model.classifier.parameters():
         param.requires_grad = True
 
